@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family:'work sans',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+.main{
+flex: 1 1 auto;
+}
+.container{
+    width: 100%;
+    max-width :1313px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+/********************************P R O D U C T S - S T A R T********************************************/
+.section__title{
+    text-align: center;
+}
+.title__title{
+    padding-top: 12px;
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #505050;
+
+
+}
+.title__title::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #AB0433;
+}
+.products{
+    position: relative;
+   margin-bottom: 80px;
+}
+.productss{
+    background-color: #ECECEC;
+    position: relative;
+   margin-bottom: 80px;
+  
+  
+}
+.products__row{
+display: flex;
+flex-wrap: wrap;
+gap: 32px; 
+margin-top: 34px;   
+}
+.product{
+   box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1); 
+width: calc(33% - 32px);
+}
+.product__image{
+    width: 100%;
+    height: 252px;
+    background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+border-radius: 10px 10px 0px 0px;
+}
+.product__images{
+    width: 100%;
+    height: 252px;
+   
+border-radius: 10px 10px 0px 0px;
+}
+
+.product__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.product__content{
+    padding: 16px 24px;
+}
+.product__title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.product__desc{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #767676;
+   margin-bottom: 30px;
+}
+.product__colors{
+    display: inline-block;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    padding: 2px 6px;
+}
+
+/********************************P R O D U C T S - E N D********************************************/
+
+
+/********************************H E A D E R - S T A R T********************************************/
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/head__bacground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 56px;
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__row{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.header__link{
+   
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;  
+    color: #FCFCFC;
+    padding: 16px;
+    transition: all 0.2s ease-in-out;
+}
+.header__link:hover{
+    color: #ab0433;
+}
+.header__link:not(:last-child){
+    margin-right: 24px;
+}
+.header__button{
+background-color: transparent;
+border: none;
+}
+.header__burger{
+display: none;
+}
+.header__buttons{
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+.header__button path{
+    transition: all 0.2s ease-in-out;
+}
+.header__button:hover path{
+    fill: #ab0433;
+}
+.header__title{
+    width: 40%;
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 120%;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+
+}
+.header__content{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/********************************H E A D E R - E N D***********************************************/
+/********************************B A N N E R - S T A R T***********************************************/
+.banner{
+position: relative;
+padding: 50px 24px;
+text-align: center;
+background: url(./images/banner__bg.jpg), #AB0433;
+background-blend-mode: darken, normal;
+background-position: center;
+background-size: cover;
+transform: translateY(-50%);
+box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
+border-radius: 10px;
+
+}
+.banner__title{
+ 
+font-weight: 700;
+font-size: 46px;
+line-height: 120%;
+text-align: center;
+color: #FFFFFF;
+margin-bottom: 16px;
+
+}
+.subtitle{
+
+font-weight: 600;
+font-size: 24px;
+line-height: 149%;
+text-align: center;
+color: #FFFFFF;
+margin-bottom: 16px;
+
+}
+.banner__button{
+    padding: 8px 16px;
+    background-color: #ff753a;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    border: 1px solid #ff753a;
+    transition: all 0.2s ease-in-out;
+}
+.banner__button:hover{
+    background-color:transparent;
+    color: #ff753a;
+}
+
+/*******************************B A N N E R - E N D***********************************************/
+
+/********************************M E D I A - S T A R T********************************************/
+@media screen and(min-width:1920px) {
+    .header{
+        height:fit-content;
+    }
+}
+@media screen and(max-width:1100px) {
+    .header__link{
+        padding:10px;
+    }
+
+    .header__link:not(:last-child){
+          margin-right: 16px; 
+    }
+}
+@media screen and(max-width:1230px) {
+    .header__title{
+        width: 50%;
+    }
+}
+@media screen and(max-width:1024px) {
+    .header__navbar,
+    .header__button{
+       display: none;
+    }
+
+    .header__burger{
+          display: block;
+    }
+    .header__title{
+        width: 60%;
+    }
+    .product{
+      
+     width: calc(50% - 32px);
+     }
+}
+@media screen and(max-width:900px) {
+  
+    .header__title{
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+    }
+}
+    @media screen and(max-width:768px) {
+  
+        .product{
+      
+            width:100%;
+            }
+    
+}
+
+/********************************M E D I A - E N D********************************************/
+
